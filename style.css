@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #4285F4;
+    --background-color: #F0F4F8;
+    --text-color: #3C4043;
+    --light-gray: #E8EAED;
+    --border-radius: 16px;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1em;
+    color: #5F6368;
+}
+
+.display-area {
+    background-color: var(--light-gray);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#statusText {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #6C757D;
+    margin: 0;
+}
+
+#earSymbol {
+    font-size: 4em;
+    font-weight: 700;
+    margin-top: 15px;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: var(--border-radius);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #3672d6;
+    transform: translateY(-2px);
+}
+
+footer {
+    margin-top: 30px;
+    color: #9AA0A6;
+    font-size: 0.8em;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
