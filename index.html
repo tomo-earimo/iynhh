@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イヤホン左右確認</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>イヤホン左右確認</h1>
+            <p>ボタンを押して、イヤホンが正しく接続されているか確認しましょう。</p>
+        </header>
+
+        <main>
+            <div class="display-area">
+                <h2 id="statusText">ボタンを押してください</h2>
+                <div id="earSymbol"></div>
+            </div>
+
+            <div class="controls">
+                <button id="playLeftBtn">◀ L</button>
+                <button id="playRightBtn">R ▶</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 左右確認サイト</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
